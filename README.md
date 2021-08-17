@@ -222,4 +222,4 @@ The data quality checks performed on the final datasets in order to ensure that 
      The ETL process would be handled and scheduled by a tool like Apache Airflow. This will allows us to set-up the refresh times on a daily basis.  
  * *The database needed to be accessed by 100+ people.*
      We can increase our nodes using Yarn or EMR, or, alternatively, move our data lake to a cloud, managed Database like Redshfit that is designed for analytical purposes, has very fast read times, and can handle high workloads (users performing queries on the DB).# Udacity-DEND-Capstone-Project
-# Udacity-DEND-Capstone-Project
+
