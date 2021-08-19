@@ -202,6 +202,21 @@ The data quality checks performed on the final datasets in order to ensure that 
     * i94visa: Visa codes collapsed into three categories
     
 #### Complete Project Write Up
+* *What is target audience, who is going to utilize the final data model?*
+    
+    The final data lake will be best suited for an analytics team with familiarity of the technologies used and the skills to connect, analyze and even visualize the resulting insights. 
+    
+    
+* *What are some of the types of questions we can handle using the proposed data model?, Please be specific as we also need to show the output in the notebook at the end to validate if the data model is able to answer the questions*
+    
+    This Data Model will allow us to answer questions such as: 
+        - What are the 10 US states with the most immigrants arriving?
+        - What are the 10 countries of birth with the most immigrants to the US?
+        - What is the gender distribution? 
+        - What is the average age?
+
+
+
 * *Clearly state the rationale for the choice of tools and technologies for the project.*
     
     The reason for using Apache Spark is its scalability, and with its pyspark implementation the ease-of-use and easy data manipulation capabilities. It allows us to build a pipeline using initial smaller datasets, and it will be perfectly capable to scale and perform efficiently when the data increases.
@@ -221,5 +236,4 @@ The data quality checks performed on the final datasets in order to ensure that 
  * *The data populates a dashboard that must be updated on a daily basis by 7am every day.*
      The ETL process would be handled and scheduled by a tool like Apache Airflow. This will allows us to set-up the refresh times on a daily basis.  
  * *The database needed to be accessed by 100+ people.*
-     We can increase our nodes using Yarn or EMR, or, alternatively, move our data lake to a cloud, managed Database like Redshfit that is designed for analytical purposes, has very fast read times, and can handle high workloads (users performing queries on the DB).# Udacity-DEND-Capstone-Project
-
+     We can increase our nodes using Yarn or EMR, or, alternatively, move our data lake to a cloud, managed Database like Redshfit that is designed for analytical purposes, has very fast read times, and can handle high workloads (users performing queries on the DB).
